@@ -1,0 +1,215 @@
+/* ===========================
+   Chronic Disease Flowchart
+   =========================== */
+
+.cd-flowchart-section {
+  overflow-x: auto;
+  padding: 28px 24px !important;
+}
+
+.cd-flowchart {
+  position: relative;
+  display: flex;
+  gap: 0;
+  min-width: 720px;
+  padding: 12px 0 8px;
+}
+
+.cd-connectors {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.cd-line {
+  stroke: var(--border);
+  stroke-width: 2;
+  fill: none;
+}
+
+.cd-line-axis {
+  stroke: var(--accent-dim);
+  stroke-width: 2.5;
+}
+
+/* Left axis */
+.cd-axis {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  flex-shrink: 0;
+  width: 130px;
+  padding-top: 4px;
+  position: relative;
+  z-index: 2;
+}
+
+.cd-axis-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 6px;
+  padding: 10px 8px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.cd-axis-icon {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.cd-axis-caption {
+  font-size: 12px;
+  color: var(--text-dim);
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Nodes */
+.cd-node {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 14px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-surface);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.35;
+  min-height: 44px;
+  position: relative;
+  z-index: 2;
+}
+
+.cd-node-static {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.cd-node-root {
+  background: var(--bg-card);
+  border-color: var(--accent-dim);
+  color: var(--text);
+  font-size: 17px;
+  min-height: 52px;
+}
+
+.cd-node-primary {
+  color: var(--text);
+  border-color: var(--accent);
+  background: rgba(232, 163, 77, 0.08);
+  text-decoration: none;
+  transition: var(--transition);
+  flex-shrink: 0;
+  min-width: 120px;
+}
+
+.cd-node-primary:hover {
+  background: rgba(232, 163, 77, 0.18);
+  border-color: #f2b869;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.cd-node-sub {
+  color: var(--text-dim);
+  font-size: 14px;
+  font-weight: 500;
+  border-style: dashed;
+  border-color: var(--border);
+  background: transparent;
+  min-height: 40px;
+  padding: 8px 10px;
+}
+
+.cd-node-end {
+  color: var(--accent-2);
+  border-color: rgba(127, 184, 164, 0.5);
+  background: rgba(127, 184, 164, 0.06);
+  font-size: 15px;
+  min-width: 100px;
+}
+
+/* Branches */
+.cd-branches {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+  padding-left: 48px;
+  position: relative;
+  z-index: 2;
+}
+
+.cd-branch {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-height: 52px;
+}
+
+.cd-branch-detail {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.cd-subgroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cd-subgroup-stack {
+  flex-direction: row;
+  gap: 10px;
+}
+
+.cd-flowchart-hint {
+  margin-top: 20px;
+  font-size: 15px;
+  color: var(--text-dim);
+  line-height: 1.6;
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+}
+
+@media (max-width: 860px) {
+  .cd-flowchart {
+    min-width: 640px;
+  }
+
+  .cd-axis {
+    width: 110px;
+  }
+
+  .cd-node {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .cd-node-sub {
+    font-size: 13px;
+  }
+
+  .cd-branches {
+    padding-left: 36px;
+    gap: 12px;
+  }
+
+  .cd-branch {
+    gap: 16px;
+  }
+}

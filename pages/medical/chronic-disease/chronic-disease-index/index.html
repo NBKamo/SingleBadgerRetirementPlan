@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>常見慢性疾病總覽 · 單身男子的退休攻略</title>
+  <meta name="description" content="高齡族群常見慢性疾病種類總覽：三高、慢性腎臟病、骨質疏鬆、心血管疾病、COPD、白內障、失智症等，點選各項目了解詳細內容。" />
+  <link rel="stylesheet" href="../../../../css/style.css" />
+  <link rel="stylesheet" href="../../../../css/chronic-disease-flowchart.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../../../../index.html" class="logo">
+        <span class="logo-icon">🧭</span>
+        <span class="logo-text">單身男子的退休攻略</span>
+      </a>
+      <nav class="site-nav">
+        <a href="../../../../index.html#medical" class="nav-link active">醫療</a>
+        <a href="../../../../index.html#longterm-care" class="nav-link">長照</a>
+        <a href="../../../../index.html#meaning" class="nav-link">存在的意義</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content-main">
+    <div class="breadcrumb">
+      <a href="../../../../index.html">首頁</a> /
+      <a href="../../../../index.html#medical">醫療</a> /
+      <a href="../index.html">常見慢性疾病</a> /
+      疾病總覽
+    </div>
+
+    <div class="page-header">
+      <span class="page-icon">💊</span>
+      <h1 class="page-title">常見慢性疾病總覽</h1>
+      <p class="page-desc">點選下方各疾病項目，了解該慢性病的預防、控制與照護資訊。灰色框為相關子類型，主要項目框可點擊進入詳細頁面。</p>
+    </div>
+
+    <div class="page-content" style="grid-template-columns: 1fr;">
+      <div class="page-main">
+
+        <section class="content-section cd-flowchart-section">
+          <div class="cd-flowchart" role="navigation" aria-label="慢性疾病分類圖">
+
+            <!-- 左側主軸 -->
+            <div class="cd-axis">
+              <div class="cd-axis-badge">
+                <span class="cd-axis-icon" aria-hidden="true">🦡</span>
+                <span class="cd-axis-caption">65 歲退休家長 ×2</span>
+              </div>
+              <div class="cd-node cd-node-static">撫養萬歲</div>
+              <div class="cd-node cd-node-static">醫療</div>
+              <div class="cd-node cd-node-root">慢性疾病</div>
+            </div>
+
+            <!-- 右側分支 -->
+            <div class="cd-branches">
+
+              <!-- 三高 → 代謝性疾病 -->
+              <div class="cd-branch" data-branch="metabolic">
+                <a href="high-blood-pressure-cholesterol-sugar/" class="cd-node cd-node-primary">三高</a>
+                <div class="cd-branch-detail">
+                  <div class="cd-subgroup">
+                    <span class="cd-node cd-node-sub">高血壓</span>
+                    <span class="cd-node cd-node-sub">高血脂</span>
+                    <span class="cd-node cd-node-sub">高血糖</span>
+                  </div>
+                  <span class="cd-node cd-node-end">代謝性疾病</span>
+                </div>
+              </div>
+
+              <!-- 慢性腎臟病 -->
+              <div class="cd-branch" data-branch="kidney">
+                <a href="chronic-kidney-disease/" class="cd-node cd-node-primary">慢性腎臟病</a>
+              </div>
+
+              <!-- 骨質疏鬆 → 退化性關節炎 -->
+              <div class="cd-branch" data-branch="bone">
+                <a href="osteoporosis/" class="cd-node cd-node-primary">骨質疏鬆</a>
+                <div class="cd-branch-detail">
+                  <span class="cd-node cd-node-sub">退化性關節炎</span>
+                </div>
+              </div>
+
+              <!-- 心血管疾病 -->
+              <div class="cd-branch" data-branch="cardio">
+                <a href="cardio-vascular-disease/" class="cd-node cd-node-primary">心血管疾病</a>
+                <div class="cd-branch-detail">
+                  <div class="cd-subgroup cd-subgroup-stack">
+                    <span class="cd-node cd-node-sub">冠狀動脈<br>缺血性心臟病</span>
+                    <span class="cd-node cd-node-sub">腦中風</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 慢性阻塞性肺病 -->
+              <div class="cd-branch" data-branch="copd">
+                <a href="chronic-obstructive-pulmonary-disease/" class="cd-node cd-node-primary">慢性阻塞性肺病</a>
+              </div>
+
+              <!-- 白內障 -->
+              <div class="cd-branch" data-branch="cataract">
+                <a href="cataract/" class="cd-node cd-node-primary">白內障</a>
+              </div>
+
+              <!-- 失智症 -->
+              <div class="cd-branch" data-branch="dementia">
+                <a href="dementia/" class="cd-node cd-node-primary">失智症</a>
+                <div class="cd-branch-detail">
+                  <div class="cd-subgroup">
+                    <span class="cd-node cd-node-sub">阿茲海默症</span>
+                    <span class="cd-node cd-node-sub">血管型失智</span>
+                    <span class="cd-node cd-node-sub">帕金森氏症</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- SVG 連接線 -->
+            <svg class="cd-connectors" aria-hidden="true">
+              <line class="cd-line cd-line-axis" x1="0" y1="0" x2="0" y2="0" />
+            </svg>
+          </div>
+
+          <p class="cd-flowchart-hint">主要疾病框（橘色邊框）可點擊進入詳細頁面；子類型框為該疾病下的常見分類，內容將陸續補上。</p>
+        </section>
+
+        <div class="page-footer-nav">
+          <a href="../index.html">← 上一篇：常見慢性疾病</a>
+          <a href="../../health-checkup/index.html">下一篇：健康檢查 →</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>單身男子的退休攻略 · <a href="https://github.com/Risch315815/SingleBadgerRetirePlan" target="_blank" rel="noopener">GitHub</a></p>
+  </footer>
+
+  <script src="../../../../js/chronic-disease-flowchart.js"></script>
+</body>
+</html>
