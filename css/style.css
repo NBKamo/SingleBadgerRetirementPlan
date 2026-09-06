@@ -92,10 +92,6 @@ img {
   flex-shrink: 0;
 }
 
-.logo-icon {
-  font-size: 26px;
-}
-
 .logo-text {
   font-size: 21px;
   font-weight: 600;
@@ -772,6 +768,13 @@ table.info-table tr:hover td {
 
 @media (max-width: 640px) {
   .hero-title { font-size: 36px; }
-  .logo-text { display: none; }
-  .header-inner { justify-content: flex-start; }
+  .logo-text { font-size: 17px; }
+  .header-inner {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2px;
+    padding: 8px 16px;
+  }
+  .site-nav { width: 100%; justify-content: center; }
 }
