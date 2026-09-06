@@ -1,4 +1,4 @@
-# 單身男子的退休攻略：醫療、長照與存在的意義
+# 單身獸爺的退休生活攻略：醫療、長照與存在的意義
 
 > 高齡相關的疾病與醫療，以及長照需求，還有退休後存在的意義，是青壯年還在打拚的階段不會想到，
 > 但是自己或家長遲早會面對的議題。這個網站想幫大家整合資訊，把可能遇到的問題、有哪些解決方式、
@@ -6,14 +6,14 @@
 
 ## 網站
 
-**GitHub Pages：** `https://risch315815.github.io/SingleBadgerRetirePlan/`
+**GitHub Pages：** `https://nbkamo.github.io/SingleBadgerRetirementPlan/`
 
 ---
 
 ## 結構說明
 
 ```
-SingleBadgerRetirePlan/
+SingleBadgerRetirementPlan/
 ├── index.html                          # 第一層：目錄（引言 + 三大分類卡片）
 ├── css/
 │   └── style.css                       # 全站樣式

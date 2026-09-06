@@ -1,4 +1,4 @@
-// 單身男子的退休攻略 — main.js
+// 單身獸爺的退休生活攻略 — main.js
 // 目前僅用於「人生清單 Bucket List」頁面的打勾記錄（localStorage）。
 
 const CHECKLIST_STORAGE_KEY = 'sbrp_bucket_list_checked';
