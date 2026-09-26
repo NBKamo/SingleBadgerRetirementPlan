@@ -26,7 +26,7 @@ SingleBadgerRetirementPlan/
 │   └── bucket-list/                    # 人生清單 BINGO 圖
 ├── pages/                              # 第二層：內容頁
 │   ├── medical/
-│   │   ├── chronic-disease/            # 常見慢性疾病（總覽、三高、腎臟病、骨鬆、白內障已完成）
+│   │   ├── chronic-disease/            # 常見慢性疾病（僅 COPD、失智症待建置）
 │   │   ├── health-checkup/             # 健康檢查（完整內容，整理自 Know_All）
 │   │   ├── self-paid-medical/          # 自費醫療（完整內容，整理自 Know_All）
 │   │   └── emergency-prevention/       # 急症與預防（待建置）
@@ -48,7 +48,7 @@ SingleBadgerRetirementPlan/
 | 醫療 | 常見慢性疾病 — 慢性腎臟病 | 完整內容 |
 | 醫療 | 常見慢性疾病 — 骨質疏鬆 | 完整內容 |
 | 醫療 | 常見慢性疾病 — 白內障 | 完整內容 |
-| 醫療 | 常見慢性疾病 — 心血管疾病 | 待建置 |
+| 醫療 | 常見慢性疾病 — 心血管疾病 | 完整內容 |
 | 醫療 | 常見慢性疾病 — 慢性阻塞性肺病 | 待建置 |
 | 醫療 | 常見慢性疾病 — 失智症 | 待建置 |
 | 醫療 | 健康檢查 | 完整內容 |
