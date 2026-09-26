@@ -21,11 +21,12 @@ SingleBadgerRetirementPlan/
 │   └── main.js                         # 互動邏輯（bucket list 打勾記錄、側欄捲動追蹤）
 ├── assets/images/
 │   ├── about/                          # 首頁「關於本站」用圖
+│   ├── medical/chronic-disease/        # 各慢性病頁的資訊圖表
 │   ├── longterm-care/                  # 長照懶人包用的資訊圖表
 │   └── bucket-list/                    # 人生清單 BINGO 圖
 ├── pages/                              # 第二層：內容頁
 │   ├── medical/
-│   │   ├── chronic-disease/            # 常見慢性疾病（待建置）
+│   │   ├── chronic-disease/            # 常見慢性疾病（總覽、三高、腎臟病、骨鬆已完成）
 │   │   ├── health-checkup/             # 健康檢查（完整內容，整理自 Know_All）
 │   │   ├── self-paid-medical/          # 自費醫療（完整內容，整理自 Know_All）
 │   │   └── emergency-prevention/       # 急症與預防（待建置）
@@ -42,7 +43,14 @@ SingleBadgerRetirementPlan/
 
 | 分類 | 主題 | 狀態 |
 |---|---|---|
-| 醫療 | 常見慢性疾病 | 待建置 |
+| 醫療 | 常見慢性疾病 — 疾病總覽 | 完整內容 |
+| 醫療 | 常見慢性疾病 — 三高（代謝性疾病） | 完整內容 |
+| 醫療 | 常見慢性疾病 — 慢性腎臟病 | 完整內容 |
+| 醫療 | 常見慢性疾病 — 骨質疏鬆 | 完整內容 |
+| 醫療 | 常見慢性疾病 — 心血管疾病 | 待建置 |
+| 醫療 | 常見慢性疾病 — 慢性阻塞性肺病 | 待建置 |
+| 醫療 | 常見慢性疾病 — 白內障 | 待建置 |
+| 醫療 | 常見慢性疾病 — 失智症 | 待建置 |
 | 醫療 | 健康檢查 | 完整內容 |
 | 醫療 | 自費醫療 | 完整內容 |
 | 醫療 | 急症與預防 | 待建置 |
