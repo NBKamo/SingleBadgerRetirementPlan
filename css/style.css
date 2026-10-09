@@ -358,6 +358,67 @@ img {
 }
 
 /* ===========================
+   Disclaimer
+   =========================== */
+
+.disclaimer-section {
+  padding: 48px 24px 56px;
+  background: var(--bg);
+}
+
+.disclaimer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 32px 32px;
+}
+
+.disclaimer-inner h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.disclaimer-lead {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.disclaimer-list {
+  list-style: decimal;
+  padding-left: 1.4em;
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.disclaimer-list li {
+  margin-bottom: 10px;
+}
+
+.disclaimer-list li::marker {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.disclaimer-note {
+  margin-top: 16px;
+  font-size: 15px;
+  color: var(--text-dim);
+  line-height: 1.7;
+}
+
+.site-footer a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ===========================
    Footer
    =========================== */
 

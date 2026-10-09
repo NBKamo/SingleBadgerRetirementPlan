@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>自費健檢決策指南 · 單身獸爺的退休生活攻略</title>
+  <title>自費健檢項目與公開套組整理 · 單身獸爺的退休生活攻略</title>
   <link rel="stylesheet" href="../../../css/style.css" />
   <style>
     .hc-page { max-width: 1000px; margin: 0 auto; padding: 0 24px 80px; }
@@ -233,8 +233,8 @@
 
     <div class="page-header">
       <span class="page-icon">🩺</span>
-      <h1 class="page-title">自費健檢決策指南</h1>
-      <p class="page-desc">根據醫師推薦項目，比較各大醫學中心健檢套組的涵蓋率與費用，找出最佳方案。</p>
+      <h1 class="page-title">自費健檢項目與公開套組整理</h1>
+      <p class="page-desc">整理衛教常見檢查項目，並對照若干醫學中心公開套組涵蓋哪些項目、公開費用大約多少。不是評比、不是推薦，也不代表某家院所比較適合你。</p>
     </div>
 
     <div class="hc-page">
@@ -251,29 +251,33 @@
         </div>
         <div class="stat-item">
           <div class="stat-num">6</div>
-          <div class="stat-label">醫院方案</div>
+          <div class="stat-label">家院所公開套組</div>
         </div>
         <div class="stat-item">
-          <div class="stat-num">~$46K</div>
-          <div class="stat-label">最佳 CP 值（成大 13/14）</div>
+          <div class="stat-num">$15K+</div>
+          <div class="stat-label">公開費用大約區間</div>
         </div>
       </div>
 
       <!-- 一、8大系統 -->
       <div class="section-block" id="systems">
-        <div class="section-label">一、醫師推薦項目</div>
+        <div class="section-label">一、衛教常見檢查項目</div>
         <h2>8大系統 × 14 核心項目</h2>
         <div class="info-note">
-          <strong>★★★ 必做優先順序：</strong>
-          幽門桿菌 → 大腸鏡 → 腹部超音波＋B/C肝 → LDCT → 腦MRI＋頸動脈超音波 → 冠狀動脈CT 或 心臟超音波
+          以下 14 項是本站自行整理的對照清單，不是官方標準，也不是評分。是否需要檢查、先做哪一項，須由醫師依個人狀況評估。<br />
+          <strong>常被一併討論的項目：</strong>
+          幽門桿菌、大腸鏡、腹部超音波＋B/C肝、LDCT、腦MRI＋頸動脈超音波、冠狀動脈CT或心臟超音波
         </div>
         <div class="systems-grid" id="systemsGrid"></div>
       </div>
 
       <!-- 二、比較總覽 -->
       <div class="section-block" id="overview">
-        <div class="section-label">二、各醫院最佳組合一覽</div>
-        <h2>涵蓋率 × 費用比較</h2>
+        <div class="section-label">二、各院公開套組一覽</div>
+        <h2>涵蓋項目與公開費用對照</h2>
+        <div class="info-note">
+          數字是用本頁自訂的 14 項去數各套組公開內容涵蓋幾項，僅方便對照，<strong>不是排名、不是推薦</strong>。連結指向各院公開網頁，方便核對原始資料，不是預約或導診。實際項目、加購與費用以各院公告及現場說明為準。
+        </div>
         <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;">
           <table class="hc-table" id="comparisonTable"></table>
         </div>
@@ -286,14 +290,14 @@
         <div id="hospitalCards"></div>
       </div>
 
-      <!-- 四、推薦決策 -->
       <div class="section-block" id="decision">
-        <div class="section-label">四、推薦決策</div>
-        <h2>缺漏項目補足方式</h2>
+        <div class="section-label">四、缺漏項目怎麼補</div>
+        <h2>常見加項與門診補做方式</h2>
+        <div class="info-note">以下是套組常未列入、可另外安排的項目與公開行情，不是指定要去哪一科或哪一家。</div>
         <div class="remedy-grid" id="remedyGrid"></div>
       </div>
 
-      <p style="margin-top:6px;font-size: 16px;color:var(--text-dim);padding-top:16px;border-top:1px solid var(--border);">費用以各醫院文件標示為準，實際以現場確認為主 · 整理日期：2026-06-19</p>
+      <p style="margin-top:6px;font-size: 16px;color:var(--text-dim);padding-top:16px;border-top:1px solid var(--border);">本頁為公開資訊整理，非評比、非推薦特定院所。費用以各醫院文件標示為準，實際以現場確認為主 · 整理日期：2026-06-19</p>
 
     </div><!-- .hc-page -->
 
@@ -330,7 +334,7 @@
       id: 3, icon: '❤️', title: '心', important: false,
       purpose: '預防心肌梗塞',
       items: ['心臟超音波', '冠狀動脈 CT（512切以上）'],
-      normal: '<br/> - EF ≥ 55%<br/> - CAC Score = 0 最佳',
+      normal: '<br/> - EF ≥ 55%<br/> - CAC Score = 0（常見參考）',
     },
     {
       id: 4, icon: '🫁', title: '肺', important: false,
@@ -366,28 +370,9 @@
 
   const HOSPITALS = [
     {
-      name: '成大醫院', fullName: '成大醫院健康管理中心',
-      url: 'https://hmc.hosp.ncku.edu.tw/%E5%81%A5%E6%AA%A2%E5%A5%97%E8%A3%9D/%E5%A5%97%E8%A3%9D%E9%A0%90%E7%B4%84/',
-      color: '#5cb85c', recommended: true,
-      combo: '腸久愛肝＋LDCT加項＋眼底',
-      costM: '約 $46,000', costF: '約 $49,500',
-      cov: 13, tot: 14,
-      missing: ['乳房攝影（女 ≥40歲）'],
-      packages: [
-        { item: '腸久愛肝套組（腦MRI＋頸動脈＋冠狀動脈CT＋胃腸鏡＋腹部MRI＋幽門桿菌＋腫瘤標記）', m: '$41,200',          f: '$44,500' },
-        { item: '加購：LDCT',              m: '約 $3,000–5,000', f: '同左' },
-        { item: '加購：眼底散瞳（眼科掛診）', m: '約 $500–1,000',   f: '同左' },
-        { item: '加購：乳房攝影（女 ≥ 40歲）',m: '—',              f: '約 $1,000–1,500' },
-        { item: '合計估算', m: '約 $45–47K', f: '約 $47.5–51K', total: true },
-      ],
-      covered: ['腦MRI', '頸動脈', '心臟超音波＋256切CT', '胃鏡', '大腸鏡', '腹部超音波＋腹部MRI', '幽門桿菌', 'B/C肝', '乳房超音波（女）', '腫瘤標記', 'HbA1c', '胰島素'],
-      gaps: ['LDCT → 加購補足', '眼底散瞳 → 眼科掛診（約 $500–1,000）'],
-      highlight: '腸久愛肝為所有套組中 CP值最高，特別亮點：含腹部MRI精查胰臟癌＋肝癌（優於一般腹部超音波）。加購LDCT後達 13/14。',
-    },
-    {
       name: '台北榮總', fullName: '臺北榮民總醫院健康管理中心',
       url: 'https://phys.vghtpe.gov.tw/departments.php?lanauge=CH',
-      color: '#7c9ef8', recommended: false,
+      color: '#7c9ef8',
       combo: '基礎週六＋頸動脈＋腦MRI＋心臟CT',
       costM: '$81,040', costF: '$81,040',
       cov: 11, tot: 14,
@@ -401,12 +386,12 @@
       ],
       covered: ['腦MRI', '頸動脈', '1152切心臟CT', 'LDCT', '胃鏡', '大腸鏡', '腹部超音波', 'B/C肝', '乳房超音波（女）', '腫瘤標記', 'HbA1c'],
       gaps: ['眼底散瞳 → 掛眼科（約 $500–1,000）', '幽門桿菌 → C13 吹氣試驗加項', '胰島素 → 單項抽血加驗（約 $200–500）'],
-      highlight: '北部首選。1152切心臟CT為高精度冠狀動脈掃描。',
+      highlight: '可加選 1152 切心臟血管CT與腦MRI。院所位於北部。',
     },
     {
       name: '台大醫院', fullName: '臺大醫院健康管理中心',
       url: 'https://hmc.ntuh.gov.tw/xcmenu?xsmsid=0M244857844766322333',
-      color: '#9ab3fa', recommended: false,
+      color: '#9ab3fa',
       combo: '基礎＋胃腸鏡＋心血管高階套裝',
       costM: '$97,300', costF: '$99,300',
       cov: 11, tot: 14,
@@ -419,12 +404,12 @@
       ],
       covered: ['腦MRI(MRA)', '頸動脈', '心臟超音波＋冠狀動脈CT', 'LDCT', '眼底', '胃鏡', '大腸鏡', '腹部超音波', 'B/C肝', '腫瘤標記', 'HbA1c'],
       gaps: ['幽門桿菌 → 胃鏡中加做 CLO test 或另約 C13', '乳房相關（女）→ 另行安排', '胰島素 → 單項加驗'],
-      highlight: '心血管高階套裝含腦MRA，為所有醫院中腦血管評估最精細。',
+      highlight: '心血管高階套裝含腦MRA、頸動脈超音波與冠狀動脈CT。',
     },
     {
       name: '台中榮總', fullName: '台中榮民總醫院健康管理中心',
       url: 'https://www.vghtc.gov.tw/CP/5229/2031',
-      color: '#80d4d4', recommended: false,
+      color: '#80d4d4',
       combo: '好胃腸保肝＋頸動脈＋心臟超音波＋腦MRA',
       costM: '$70,325', costF: '$70,325',
       cov: 11, tot: 14,
@@ -438,12 +423,12 @@
       ],
       covered: ['腦MRA', '頸動脈', '心臟超音波', 'LDCT', '胃鏡', '大腸鏡', '腹部超音波＋肝臟MRI', '幽門桿菌', 'B/C肝', '腫瘤標記', 'HbA1c'],
       gaps: ['眼底散瞳 → 掛眼科', '乳房超音波/攝影 → 加選 $735', '胰島素 → 可加選血液尊爵專案'],
-      highlight: '好胃腸保肝含肝臟MRI（精查早期肝癌），適合肝病高風險族群。中台灣首選。',
+      highlight: '好胃腸保肝套組含肝臟MRI、LDCT與無痛胃腸鏡。院所位於中台灣。',
     },
     {
       name: '林口長庚', fullName: '林口長庚紀念醫院健康管理中心',
       url: 'https://cghdpt.cgmh.org.tw/dept/hmclnk/m/10408/news/35858',
-      color: '#f0c040', recommended: false,
+      color: '#f0c040',
       combo: '護心保肺＋腦MRA＋幽門桿菌C13',
       costM: '約 $20,860+', costF: '約 $20,860+',
       cov: 10, tot: 14,
@@ -456,12 +441,31 @@
       ],
       covered: ['腦MRA(加選)', '頸動脈', '心臟超音波', 'LDCT', '腹部超音波', '幽門桿菌(加選)', 'B/C肝', '乳房超音波（女）', '腫瘤標記', 'HbA1c'],
       gaps: ['眼底散瞳 → 掛眼科', '胃鏡、大腸鏡 → 需另外安排', '胰島素 → 單項加驗', '乳房攝影（女 ≥ 40歲）→ 另行安排'],
-      highlight: '費用最平價，$14,999 即含心臟超音波＋頸動脈＋LDCT，預算有限的優質起點。胃腸鏡需另約，模組化彈性高。',
+      highlight: '護心保肺套組公開價 $14,999，含心臟超音波、頸動脈與LDCT；胃腸鏡需另外安排。',
+    },
+    {
+      name: '成大醫院', fullName: '成大醫院健康管理中心',
+      url: 'https://hmc.hosp.ncku.edu.tw/',
+      color: '#5cb85c',
+      combo: '腸久愛肝＋LDCT加項＋眼底',
+      costM: '約 $46,000', costF: '約 $49,500',
+      cov: 13, tot: 14,
+      missing: ['乳房攝影（女 ≥40歲）'],
+      packages: [
+        { item: '腸久愛肝套組（腦MRI＋頸動脈＋冠狀動脈CT＋胃腸鏡＋腹部MRI＋幽門桿菌＋腫瘤標記）', m: '$41,200',          f: '$44,500' },
+        { item: '加購：LDCT',              m: '約 $3,000–5,000', f: '同左' },
+        { item: '加購：眼底散瞳（眼科掛診）', m: '約 $500–1,000',   f: '同左' },
+        { item: '加購：乳房攝影（女 ≥ 40歲）',m: '—',              f: '約 $1,000–1,500' },
+        { item: '合計估算', m: '約 $45–47K', f: '約 $47.5–51K', total: true },
+      ],
+      covered: ['腦MRI', '頸動脈', '心臟超音波＋256切CT', '胃鏡', '大腸鏡', '腹部超音波＋腹部MRI', '幽門桿菌', 'B/C肝', '乳房超音波（女）', '腫瘤標記', 'HbA1c', '胰島素'],
+      gaps: ['LDCT → 加購補足', '眼底散瞳 → 眼科掛診（約 $500–1,000）'],
+      highlight: '腸久愛肝套組含腹部MRI、腦MRI、冠狀動脈CT、胃腸鏡等；加購LDCT後，對照本頁 14 項可達 13/14。腹部MRI與腹部超音波是不同檢查。',
     },
     {
       name: '高雄長庚', fullName: '高雄長庚紀念醫院健康管理中心',
       url: 'https://www1.cgmh.org.tw/intr/intr4/c8190/',
-      color: '#f48ab0', recommended: false,
+      color: '#f48ab0',
       combo: '進階心血管型＋門診補項',
       costM: '約 $63,000', costF: '—',
       cov: 13, tot: 14,
@@ -476,29 +480,29 @@
       ],
       covered: ['頸動脈', '眼底鏡', '心臟超音波＋640切CT', '無痛胃鏡', '無痛大腸鏡', '腹部超音波', '腫瘤標記', 'HbA1c', 'LDCT(門診)', '幽門桿菌(門診)', 'B/C肝(門診)', '胰島素(門診)'],
       gaps: ['腦部MRI → 可再加，費用約 $18,000–22,000'],
-      highlight: '640切冠狀動脈CT為資料中最高切數。進階心血管型以 $55,000 套組搭配門診補項，約 $63,000 達 13/14，相較菁英健檢省下約 $45,000。',
-      altPlan: { name: '方案B：男性菁英健檢', cost: '$107,500（男）/ $104,500（女）', color: '#f48ab0', note: '含全身正子CT(PET/CT)，加做幽門桿菌＋胰島素後可達 14/14。' },
+      highlight: '進階心血管型套組含 640 切冠狀動脈CT、眼底與無痛胃腸鏡；搭配門診補項後，對照本頁 14 項可達 13/14。該院另有菁英健檢，公開價約 $10 萬。',
+      altPlan: { name: '同一院所另一套組：男性菁英健檢', cost: '$107,500（男）/ $104,500（女）', color: '#f48ab0', note: '含全身正子CT(PET/CT)；加做幽門桿菌與胰島素後，對照本頁 14 項可達 14/14。' },
     },
   ];
 
   const BUDGET = [
-    { range: '< $25,000',       plan: '林口長庚 護心保肺（$14,999）＋腦MRA加選',        note: '心肺＋頸動脈基礎版；胃腸鏡需另約', best: false },
-    { range: '$40,000–50,000',  plan: '成大醫院 腸久愛肝＋LDCT加項 ⭐',               note: '涵蓋率最高（13/14），CP值最佳',     best: true  },
-    { range: '$60,000–70,000',  plan: '高雄長庚 進階心血管型＋門診補項',               note: '13/14；含640切CT＋眼底＋無痛胃腸鏡', best: false },
-    { range: '$70,000–80,000',  plan: '台中榮總 好胃腸保肝＋頸動脈＋心臟＋腦MRA',    note: '11/14；含肝臟MRI精查，適合中台灣', best: false },
-    { range: '$80,000–100,000', plan: '台北榮總 基礎週六＋影像全加',                   note: '11/14；北部首選，含1152切心臟CT',   best: false },
-    { range: '> $100,000',      plan: '高雄長庚 男性菁英健檢＋門診補幽門/胰島素',     note: '14/14；640切CT＋全身正子CT最完整', best: false },
+    { range: '< $25,000',       plan: '林口長庚 護心保肺（$14,999）＋腦MRA加選',        note: '心肺＋頸動脈基礎版；胃腸鏡需另約' },
+    { range: '$40,000–50,000',  plan: '成大醫院 腸久愛肝＋LDCT加項',                   note: '對照本頁 14 項可達 13/14' },
+    { range: '$60,000–70,000',  plan: '高雄長庚 進階心血管型＋門診補項',               note: '13/14；含640切CT＋眼底＋無痛胃腸鏡' },
+    { range: '$70,000–80,000',  plan: '台中榮總 好胃腸保肝＋頸動脈＋心臟＋腦MRA',    note: '11/14；套組含肝臟MRI' },
+    { range: '$80,000–100,000', plan: '台北榮總 基礎週六＋影像全加',                   note: '11/14；含1152切心臟CT' },
+    { range: '> $100,000',      plan: '高雄長庚 男性菁英健檢＋門診補幽門/胰島素',     note: '14/14；含640切CT與全身正子CT' },
   ];
 
   const REGIONS = [
-    { region: '台北／北部', hosp: '台北榮總 或 台大醫院', note: '心血管精查首選' },
-    { region: '台中',       hosp: '台中榮總',              note: '好胃腸保肝系列' },
-    { region: '台南',       hosp: '成大醫院',              note: '腸久愛肝（CP值最高）' },
-    { region: '高雄',       hosp: '高雄長庚',              note: '進階心血管型或菁英健檢' },
+    { region: '台北／北部', hosp: '台北榮總、台大醫院', note: '套組可含心血管相關影像' },
+    { region: '台中',       hosp: '台中榮總',            note: '好胃腸保肝系列' },
+    { region: '台南',       hosp: '成大醫院',            note: '腸久愛肝套組' },
+    { region: '高雄',       hosp: '高雄長庚',            note: '進階心血管型或菁英健檢' },
   ];
 
   const REMEDIES = [
-    { item: '幽門桿菌',           how: 'C13 吹氣試驗（最方便）或胃鏡同做 CLO test',    cost: '$1,000–1,300' },
+    { item: '幽門桿菌',           how: 'C13 吹氣試驗或胃鏡同做 CLO test',    cost: '$1,000–1,300' },
     { item: '胰島素 / HOMA-IR',   how: '門診或健檢中心抽血加項',                       cost: '$200–500' },
     { item: '眼底散瞳',           how: '眼科門診掛診',                                 cost: '$500–1,000' },
     { item: '乳房攝影（女 ≥40歲）', how: '放射科或健檢加項；國健署免費乳攝（≥ 45歲）', cost: '$0–1,500' },
@@ -526,7 +530,7 @@
         <div class="system-card-header">
           <span class="system-card-icon">${s.icon}</span>
           <span class="system-card-title">${s.id}. ${s.title}</span>
-          ${s.important ? '<span class="system-tag">★ 必做</span>' : ''}
+          ${s.important ? '<span class="system-tag">常列入</span>' : ''}
         </div>
         <div class="system-card-purpose">${s.purpose}</div>
         <ul class="system-card-items">
@@ -543,7 +547,7 @@
       <thead>
         <tr>
           <th>醫院</th>
-          <th>最佳套組組合</th>
+          <th>對照用套組</th>
           <th>費用（男）</th>
           <th>費用（女）</th>
           <th>涵蓋</th>
@@ -552,8 +556,8 @@
       </thead>
       <tbody>
         ${HOSPITALS.map(h => `
-          <tr class="${h.recommended ? 'rec' : ''}">
-            <td><a href="${h.url}" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px;">${h.name}</a>${h.recommended ? ' ⭐' : ''}</td>
+          <tr>
+            <td>${h.name}</td>
             <td>${h.combo}</td>
             <td><span class="cost-main">${h.costM}</span></td>
             <td><span class="${h.costF === '—' ? '' : 'cost-main'}">${h.costF}</span></td>
@@ -572,10 +576,10 @@
         <div class="hosp-header">
           <div class="hosp-bar" style="background:${h.color};"></div>
           <div>
-            <div class="hosp-name" style="color:${h.color};">
-              <a href="${h.url}" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px;">${h.name}</a>${h.recommended ? ' ⭐' : ''}
+            <div class="hosp-name" style="color:${h.color};">${h.name}</div>
+            <div class="hosp-sub">
+              <a href="${h.url}" target="_blank" rel="noopener" style="color:#ffffff;" onclick="event.stopPropagation()">${h.fullName}（公開資料來源）↗</a>
             </div>
-            <div class="hosp-sub"><a href="${h.url}" target="_blank" rel="noopener" style="color:#ffffff;">${h.fullName} ↗</a></div>
           </div>
           <div class="hosp-right">
             <span class="cov-badge ${covClass(h.cov, h.tot)}">${h.cov}/${h.tot}</span>
@@ -624,7 +628,7 @@
     const container = document.getElementById('budgetList');
     BUDGET.forEach(t => {
       const row = document.createElement('div');
-      row.className = 'budget-row' + (t.best ? ' best' : '');
+      row.className = 'budget-row';
       row.innerHTML = `
         <div class="budget-range">${t.range}</div>
         <div class="budget-plan">${t.plan}</div>
