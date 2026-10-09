@@ -27,8 +27,6 @@ SingleBadgerRetirementPlan/
 ├── pages/                              # 第二層：內容頁
 │   ├── medical/
 │   │   ├── chronic-disease/            # 常見慢性疾病（僅失智症待建置）
-│   │   ├── health-checkup/             # 健康檢查（完整內容，整理自 Know_All）
-│   │   ├── self-paid-medical/          # 自費醫療（完整內容，整理自 Know_All）
 │   │   └── emergency-prevention/       # 急症與預防（待建置）
 │   ├── longterm-care/
 │   │   └── guide/                      # 長期照護懶人包（完整內容）
@@ -51,8 +49,6 @@ SingleBadgerRetirementPlan/
 | 醫療 | 常見慢性疾病 — 心血管疾病 | 完整內容 |
 | 醫療 | 常見慢性疾病 — 慢性阻塞性肺病 | 完整內容 |
 | 醫療 | 常見慢性疾病 — 失智症 | 待建置 |
-| 醫療 | 健康檢查 | 完整內容 |
-| 醫療 | 自費醫療 | 完整內容 |
 | 醫療 | 急症與預防 | 待建置 |
 | 長照 | 長期照護懶人包 | 完整內容 |
 | 存在的意義 | 如何不成為你不喜歡的家長 | 待建置 |
