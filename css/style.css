@@ -533,6 +533,7 @@ img {
   border-radius: var(--radius);
   padding: 26px 28px;
   margin-bottom: 24px;
+  scroll-margin-top: 76px;
 }
 
 .content-section h2 {
@@ -811,6 +812,86 @@ table.info-table tr:hover td {
   border-color: var(--accent-dim);
   color: var(--text);
   text-decoration: none;
+}
+
+/* Talk / transcript page */
+.slide-deck {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.slide-item .figure {
+  margin-bottom: 0;
+}
+
+.slide-item .figure img {
+  background: #fff;
+}
+
+.transcript-section .content-section h3 {
+  margin-top: 28px;
+}
+
+.stage-note {
+  font-size: 16px;
+  color: var(--text-dim);
+  font-style: italic;
+  border-left: 3px solid var(--border);
+  padding: 6px 0 6px 14px;
+  margin: 14px 0;
+}
+
+.cue-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  margin: 14px 0 18px;
+}
+
+.cue-box p,
+.cue-box li {
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.cue-box ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.talk-table-wrap {
+  overflow-x: auto;
+  margin: 14px 0 18px;
+}
+
+.talk-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+.talk-table th,
+.talk-table td {
+  border-bottom: 1px solid var(--border);
+  padding: 8px 10px;
+  text-align: left;
+  color: var(--text-muted);
+  vertical-align: top;
+}
+
+.talk-table th {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.unpublished-note {
+  font-size: 16px;
+  color: var(--text-dim);
+  margin-top: 8px;
 }
 
 /* Responsive */
