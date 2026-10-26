@@ -182,7 +182,7 @@ img {
   display: flex;
   align-items: baseline;
   gap: 14px;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 
 .category-icon {
@@ -364,6 +364,7 @@ img {
 .disclaimer-section {
   padding: 48px 24px 56px;
   background: var(--bg);
+  scroll-margin-top: 76px;
 }
 
 .disclaimer-inner {
