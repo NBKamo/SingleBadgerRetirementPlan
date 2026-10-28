@@ -894,6 +894,76 @@ table.info-table tr:hover td {
   margin-top: 8px;
 }
 
+/* Homepage: one slide + transcript */
+.talk-home {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 8px 24px 64px;
+}
+
+.talk-home .category-section {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.talk-home .category-header {
+  margin-top: 16px;
+}
+
+.talk-block {
+  padding: 8px 0 36px;
+  scroll-margin-top: 76px;
+}
+
+.talk-block .figure {
+  margin-top: 0;
+}
+
+.talk-script {
+  margin-top: 8px;
+}
+
+.talk-script p {
+  color: var(--text-muted);
+  font-size: 19px;
+  line-height: 1.85;
+  margin-bottom: 12px;
+}
+
+.talk-script p:last-child {
+  margin-bottom: 0;
+}
+
+.talk-script ul,
+.talk-script ol {
+  list-style: disc;
+  padding-left: 1.5em;
+  margin: 4px 0 14px;
+  color: var(--text-muted);
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+.talk-script ol {
+  list-style: decimal;
+}
+
+.talk-script li {
+  margin-bottom: 6px;
+}
+
+.talk-script li ul,
+.talk-script li ol {
+  margin: 6px 0 4px;
+}
+
+.talk-event-meta {
+  font-size: 17px;
+  color: var(--text-dim);
+  margin-bottom: 14px;
+  line-height: 1.7;
+}
+
 /* Responsive */
 @media (max-width: 860px) {
   .about-inner {
