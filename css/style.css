@@ -901,22 +901,12 @@ table.info-table tr:hover td {
   padding: 8px 24px 64px;
 }
 
-.talk-home .category-section {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.talk-home .category-header {
-  margin-top: 16px;
-}
-
-.talk-block {
-  padding: 8px 0 36px;
+.talk-home .talk-block {
   scroll-margin-top: 76px;
 }
 
-.talk-block .figure {
-  margin-top: 0;
+.talk-home .talk-block .figure {
+  margin-top: 4px;
 }
 
 .talk-script {
@@ -932,6 +922,11 @@ table.info-table tr:hover td {
 
 .talk-script p:last-child {
   margin-bottom: 0;
+}
+
+.talk-script strong {
+  color: var(--text);
+  font-weight: 700;
 }
 
 .talk-script ul,
@@ -955,13 +950,6 @@ table.info-table tr:hover td {
 .talk-script li ul,
 .talk-script li ol {
   margin: 6px 0 4px;
-}
-
-.talk-event-meta {
-  font-size: 17px;
-  color: var(--text-dim);
-  margin-bottom: 14px;
-  line-height: 1.7;
 }
 
 /* Responsive */
